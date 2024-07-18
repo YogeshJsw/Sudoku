@@ -24,7 +24,7 @@
             android:layout_width="40dp"
             android:layout_height="36dp"
             android:background="?attr/selectableItemBackground"
-            android:contentDescription="Back"
+            android:contentDescription="@string/back"
             android:padding="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
-            android:text="Play Sudoku!"
+            android:text="@string/play_sudoku"
             android:textColor="#212121"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -66,7 +66,7 @@
         android:background="@drawable/blackborder"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Score: 0"
+        android:text="@string/score_0"
         app:layout_constraintBottom_toTopOf="@id/level"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,15 +81,14 @@
         android:layout_marginStart="40dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/blackborder"
-        android:drawableTop="@drawable/baseline_undo_24"
         android:drawablePadding="4dp"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Undo"
+        android:text="@string/undo"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@id/gridBtns"
+        app:drawableTopCompat="@drawable/baseline_undo_24" app:layout_constraintBottom_toTopOf="@id/gridBtns"
         app:layout_constraintEnd_toStartOf="@id/hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/hint" />
@@ -103,14 +102,14 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/blackborder"
-        android:drawableTop="@drawable/baseline_lightbulb_24"
         android:drawablePadding="4dp"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Hint"
+        android:text="@string/hint"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
+        app:drawableTopCompat="@drawable/baseline_lightbulb_24"
         app:layout_constraintBottom_toTopOf="@id/gridBtns"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/undo" />
@@ -135,11 +134,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/one_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="1"
-            android:textColor="@color/white" />
+            android:text="@string/_1"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/one_img" />
 
         <TextView
             android:id="@+id/btn2"
@@ -148,11 +147,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/two_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="2"
-            android:textColor="@color/white" />
+            android:text="@string/_2"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/two_img" />
 
         <TextView
             android:id="@+id/btn3"
@@ -161,11 +160,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/three_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="3"
-            android:textColor="@color/white" />
+            android:text="@string/_3"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/three_img" />
 
 
         <TextView
@@ -175,11 +174,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/four_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="4"
-            android:textColor="@color/white" />
+            android:text="@string/_4"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/four_img" />
 
         <TextView
             android:id="@+id/btn5"
@@ -188,11 +187,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/five_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="5"
-            android:textColor="@color/white" />
+            android:text="@string/_5"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/five_img" />
 
         <TextView
             android:id="@+id/btn6"
@@ -201,11 +200,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/six_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="6"
-            android:textColor="@color/white" />
+            android:text="@string/_6"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/six_img" />
 
 
         <TextView
@@ -215,11 +214,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/seven_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="7"
-            android:textColor="@color/white" />
+            android:text="@string/_7"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/seven_img" />
 
         <TextView
             android:id="@+id/btn8"
@@ -228,11 +227,11 @@
             android:layout_gravity="center"
             android:layout_marginEnd="2dp"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/eight_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="8"
-            android:textColor="@color/white" />
+            android:text="@string/_8"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/eight_img" />
 
         <TextView
             android:id="@+id/btn9"
@@ -240,11 +239,11 @@
             android:layout_height="54dp"
             android:layout_gravity="center"
             android:background="@drawable/blueborder"
-            android:drawableTop="@drawable/nine_img"
             android:gravity="center"
             android:paddingTop="4dp"
-            android:text="9"
-            android:textColor="@color/white" />
+            android:text="@string/_9"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/nine_img" />
     </GridLayout>
 
     <TextView
@@ -252,7 +251,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="Mistake:0/3"
+        android:text="@string/mistake_0_3"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -263,7 +262,7 @@
         android:id="@+id/level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Easy"
+        android:text="@string/easy"
         android:textColor="#0d47a1"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -271,22 +270,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Timer:"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/timer"
-        app:layout_constraintTop_toTopOf="@id/level" />
+
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="00:00:00"
+        android:layout_marginEnd="24dp"
+        android:text="@string/_00_00_00"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -317,10 +307,10 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_margin="1dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
-            android:padding="1dp"
             android:rowCount="3">
 
             <TextView
@@ -330,7 +320,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/blackborder"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -422,10 +412,11 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_margin="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
-            android:padding="1dp"
             android:rowCount="3">
 
 
@@ -536,7 +527,8 @@
             android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="2"
-            android:layout_margin="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
             android:padding="1dp"
@@ -650,7 +642,9 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_margin="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
             android:padding="1dp"
@@ -763,10 +757,12 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="1"
-            android:layout_margin="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
-            android:padding="1dp"
             android:rowCount="3">
 
 
@@ -877,7 +873,9 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_column="2"
-            android:layout_margin="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
             android:padding="1dp"
@@ -991,7 +989,8 @@
             android:layout_height="wrap_content"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_margin="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
             android:padding="1dp"
@@ -1104,10 +1103,11 @@
             android:layout_height="wrap_content"
             android:layout_row="2"
             android:layout_column="1"
-            android:layout_margin="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
-            android:padding="1dp"
             android:rowCount="3">
 
 
@@ -1218,7 +1218,8 @@
             android:layout_height="wrap_content"
             android:layout_row="2"
             android:layout_column="2"
-            android:layout_margin="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
             android:background="@drawable/outer_border"
             android:columnCount="3"
             android:padding="1dp"
