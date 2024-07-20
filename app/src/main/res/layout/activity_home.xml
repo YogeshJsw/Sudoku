@@ -29,6 +29,7 @@
         android:textColor="#FFFFFF"
         android:visibility="gone"
         android:textSize="28sp"
+
         android:text="Keep Your Mind Sharp"
         app:layout_constraintTop_toBottomOf="@id/logo_img"
 

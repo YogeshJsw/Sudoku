@@ -6,7 +6,6 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.os.postDelayed
 import com.yogeshj.sudoku.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -19,7 +18,12 @@ class HomeActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed(
             {
                 binding.text.visibility=View.VISIBLE
-            },2000
+                binding.text.alpha = 0f
+                binding.text.animate()
+                    .alpha(1f)
+                    .setDuration(4000)
+                    .start()
+            },0
         )
 
         Handler(Looper.getMainLooper()).postDelayed(
